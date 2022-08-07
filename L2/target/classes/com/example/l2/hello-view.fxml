@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="510.0" spacing="20.0" style="-fx-background-color: #BC8F8F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.l2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="327.0" prefWidth="501.0" style="-fx-background-color: #FFE4E1;">
+      <children>
+         <Button layoutX="30.0" layoutY="35.0" mnemonicParsing="false" onAction="#onConnectButtonClick" style="-fx-border-color: #C71585; -fx-border-width: 2; -fx-background-color: #FFB6C1;" text="Connect" />
+         <Label layoutX="110.0" layoutY="27.0" prefHeight="47.0" prefWidth="95.0" text="IP address">
+            <font>
+               <Font name="Party LET Plain" size="27.0" />
+            </font></Label>
+         <TextField fx:id="ipAddress" layoutX="201.0" layoutY="38.0" prefHeight="26.0" prefWidth="106.0" />
+         <TextField fx:id="port" layoutX="201.0" layoutY="79.0" prefHeight="26.0" prefWidth="106.0" />
+         <Label layoutX="154.0" layoutY="68.0" prefHeight="30.0" prefWidth="37.0" text="port">
+            <font>
+               <Font name="Party LET Plain" size="27.0" />
+            </font></Label>
+         <Label alignment="CENTER" layoutX="195.0" layoutY="119.0" prefHeight="46.0" prefWidth="126.0" text="Sending data">
+            <font>
+               <Font name="Party LET Plain" size="27.0" />
+            </font>
+         </Label>
+         <Button layoutX="42.0" layoutY="162.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="64.0" style="-fx-border-color: #C71585#C71585; -fx-border-width: 2; -fx-background-color: #FFB6C1 #FFB6C1;" text="Send" />
+         <TextField fx:id="sendingData" layoutX="129.0" layoutY="163.0" prefHeight="26.0" prefWidth="222.0" />
+         <Label contentDisplay="CENTER" layoutX="230.0" layoutY="192.0" prefHeight="36.0" prefWidth="54.0" text="Result">
+            <font>
+               <Font name="Party LET Plain" size="27.0" />
+            </font>
+         </Label>
+         <TextArea fx:id="resultText" layoutX="139.0" layoutY="244.0" prefHeight="20.0" prefWidth="222.0" />
+         <Button layoutX="394.0" layoutY="309.0" mnemonicParsing="false" onAction="#onClearButtonCLick" style="-fx-border-color: #C71585#C71585; -fx-border-width: 2; -fx-background-color: #FFB6C1 #FFB6C1;" text="Clear" />
+         <ImageView fx:id="winx" fitHeight="165.0" fitWidth="211.0" layoutX="-6.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../java/com/example/l2/Images/winx.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="kiko" fitHeight="117.0" fitWidth="171.0" layoutX="318.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../java/com/example/l2/Images/kiko.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+</VBox>
