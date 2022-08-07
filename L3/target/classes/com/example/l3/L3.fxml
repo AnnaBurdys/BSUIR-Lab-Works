@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="538.0"  xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.l3.HelloController">
+   <children>
+      <Button fx:id="calculateButton" layoutX="363.0" layoutY="97.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" style="-fx-border-color: #000000; -fx-background-color: #C0C0C0; -fx-border-width: 1;" text="Calculate" />
+      <Button layoutX="363.0" layoutY="137.0" mnemonicParsing="false" onAction="#onClearButtonCLick" style="-fx-border-color: #000000; -fx-background-color: #C0C0C0 #C0C0C0; -fx-border-width: 1;" text="Clear" />
+      <TextField fx:id="coeffA" layoutX="135.0" layoutY="71.0" style="-fx-border-color: #000000 #000000;" />
+      <TextField fx:id="coeffB" layoutX="135.0" layoutY="116.0" style="-fx-border-color: #000000 #000000;" />
+      <TextField fx:id="coeffC" layoutX="135.0" layoutY="161.0" style="-fx-border-color: #000000 #000000;" />
+      <Label layoutX="55.0" layoutY="80.0" text=" Число а" />
+      <Label layoutX="55.0" layoutY="120.0" text="Число b" />
+      <Label layoutX="55.0" layoutY="160.0" text="Число c" />
+      <Label layoutX="147.0" layoutY="222.0" text="Результат вычислений " />
+      <Label layoutX="148.0" layoutY="25.0" text="Вычисление суммы двух числовых рядов" />
+      <TextField fx:id="resultField" layoutX="101.0" layoutY="247.0" prefHeight="26.0" prefWidth="229.0" style="-fx-border-color: #000000 #000000;" />
+   </children>
+</AnchorPane>
